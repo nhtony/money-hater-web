@@ -1,4 +1,4 @@
-import { Card, Header } from "./components";
+import { Card, Header, IconPlus, Navbar } from "./components";
 
 const mockData = [
   {
@@ -28,17 +28,28 @@ const mockData = [
     total: 100000000,
     listItems: [{ Name: "Vàng", Amount: 100000 }],
   },
+  {
+    title: "Đầu tư",
+    total: 100000000,
+    listItems: [{ Name: "Vàng", Amount: 100000 }],
+  },
+  {
+    title: "Đầu tư",
+    total: 100000000,
+    listItems: [{ Name: "Vàng", Amount: 100000 }],
+  },
 ];
 
 export default function Home() {
   return (
-    <div className="max-w-md mx-auto p-4">
+    <div className="max-w-md mx-auto p-4 relative bg-slate-50">
       <Header />
-      <div className="my-8">
+      <div className="py-12">
         {mockData.map((item) => {
           return <Card key={item.title} {...item} />;
         })}
       </div>
+      <Navbar />
     </div>
   );
 }
