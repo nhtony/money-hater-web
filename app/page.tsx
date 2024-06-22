@@ -11,14 +11,6 @@ const mockData = [
     ],
   },
   {
-    title: "Chi tiêu",
-    total: 100000000,
-    listItems: [
-      { Name: "Tết", Amount: 100000 },
-      { Name: "Sinh nhật", Amount: 100000 },
-    ],
-  },
-  {
     title: "Tiết kiệm",
     total: 100000000,
     listItems: [{ Name: "VCB", Amount: 100000 }],
@@ -42,7 +34,7 @@ const mockData = [
 
 export default function Home() {
   return (
-    <div className="max-w-md mx-auto p-4 relative bg-slate-50">
+    <div className="max-w-md mx-auto p-4 relative bg-neutral-50">
       <Header />
       <div className="py-12">
         {mockData.map((item) => {
